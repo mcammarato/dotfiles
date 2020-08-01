@@ -1,0 +1,48 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red27\green31\blue34;}
+{\*\expandedcolortbl;;\cssrgb\c14118\c16078\c18039;}
+\margl1440\margr1440\vieww14200\viewh16940\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+# mac dev tools\
+xcode-select --install\
+\
+# install homebrew (get latest)\
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"\
+\
+# update homebrew\
+brew update\
+\
+# install latest bash\
+brew install bash\
+sudo nano /etc/shells\
+add usr/local/bin/bash\
+chsh -s /usr/local/bin/bash\
+echo $SHELL to confirm\
+\
+#install git \
+brew install git\
+\
+# create bash profile\
+from home dir\
+nano .bash_profile\
+copy contents from git\
+\
+# install applications\
+brew cask install rectangle\
+brew cask install alfred\
+brew cask install hyper switch\
+brew cask install google-chrome\
+brew cask install visual-studio-code\
+brew cask install spotify\
+brew cask install notion\
+brew cask install slack\
+Brew cask install discord\
+\
+# install nvm\
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash\
+nvm install 14\
+}
