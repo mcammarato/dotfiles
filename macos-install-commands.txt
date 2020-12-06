@@ -22,6 +22,9 @@ from home dir
 nano .bash_profile
 copy contents from git
 
+# install htop
+brew install htop
+
 # install applications
 brew cask install rectangle
 brew cask install alfred
